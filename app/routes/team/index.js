@@ -1,6 +1,6 @@
 import AuthenticatedRoute from 'ghost-admin/routes/authenticated';
 import CurrentUserSettings from 'ghost-admin/mixins/current-user-settings';
-import PaginationMixin from 'ghost-admin/mixins/pagination';
+import PaginationMixin from 'gh-shared/mixins/pagination';
 import RSVP from 'rsvp';
 import styleBody from 'ghost-admin/mixins/style-body';
 

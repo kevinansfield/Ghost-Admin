@@ -17,6 +17,26 @@ const App = Application.extend({
         touchmove: null,
         touchend: null,
         touchcancel: null
+    },
+
+    engines: {
+        ghSubscribers: {
+            dependencies: {
+                externalRoutes: {
+                    'posts': 'posts',
+                    'signin': 'signin'
+                },
+                services: [
+                    '-document', // needed for ember-wormhole https://github.com/yapplabs/ember-wormhole/issues/84
+                    'dropdown',
+                    'feature',
+                    'media',
+                    'notifications',
+                    'session',
+                    'store'
+                ]
+            }
+        }
     }
 });
 

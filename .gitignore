@@ -43,6 +43,7 @@ Session.vim
 # dependencies
 /node_modules
 /bower_components
+/lib/**/node_modules
 
 # misc
 /connect.lock

@@ -1,0 +1,14 @@
+{
+  "name": "subscribers",
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "ember-cli-babel": "*",
+    "ember-cli-htmlbars": "*",
+    "ember-inline-svg": "^0.1.11",
+    "ember-light-table": "1.8.6",
+    "ember-simple-auth": "*",
+    "gh-shared": "file:../gh-shared"
+  }
+}

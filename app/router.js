@@ -57,10 +57,7 @@ GhostRouter.map(function () {
         this.route('amp', {path: 'amp'});
     });
 
-    this.route('subscribers', function () {
-        this.route('new');
-        this.route('import');
-    });
+    this.mount('gh-subscribers', {as: 'subscribers', path: '/subscribers'});
 
     this.route('error404', {path: '/*path'});
 });

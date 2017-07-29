@@ -1,0 +1,13 @@
+{
+  "name": "gh-shared",
+  "version": "0.0.0",
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "ember-cli-babel": "*",
+    "ember-cli-htmlbars": "*",
+    "ember-route-action-helper": "2.0.5",
+    "liquid-wormhole": "^2.0.6"
+  }
+}

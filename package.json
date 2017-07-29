@@ -69,11 +69,11 @@
     "ember-data": "2.13.1",
     "ember-data-filter": "1.13.0",
     "ember-element-resize-detector": "0.1.5",
+    "ember-engines": "^0.5.8",
     "ember-export-application-global": "2.0.0",
     "ember-infinity": "0.2.8",
     "ember-inline-svg": "0.1.11",
     "ember-invoke-action": "1.4.0",
-    "ember-light-table": "1.8.6",
     "ember-load": "0.0.11",
     "ember-load-initializers": "1.0.0",
     "ember-native-dom-helpers": "0.4.0",
@@ -119,7 +119,9 @@
   },
   "ember-addon": {
     "paths": [
-      "lib/asset-delivery"
+      "lib/asset-delivery",
+      "lib/gh-shared",
+      "lib/gh-subscribers"
     ]
   }
 }
