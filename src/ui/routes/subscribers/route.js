@@ -1,4 +1,4 @@
-import AuthenticatedRoute from "ghost-admin/src/ui/routes/authenticated";
+import AuthenticatedRoute from 'ghost-admin/src/ui/routes/authenticated';
 import RSVP from 'rsvp';
 import {inject as injectService} from '@ember/service';
 

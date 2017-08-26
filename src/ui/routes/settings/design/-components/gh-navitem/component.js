@@ -1,6 +1,6 @@
 import Component from '@ember/component';
 import SortableItem from 'ember-sortable/mixins/sortable-item';
-import ValidationState from "ghost-admin/src/utils/mixins/validation-state";
+import ValidationState from 'ghost-admin/src/utils/mixins/validation-state';
 import {alias, readOnly} from '@ember/object/computed';
 import {computed} from '@ember/object';
 import {run} from '@ember/runloop';

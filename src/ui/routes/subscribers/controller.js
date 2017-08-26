@@ -1,8 +1,8 @@
 import $ from 'jquery';
 import Controller from '@ember/controller';
-import PaginationMixin from "ghost-admin/src/utils/mixins/pagination";
+import PaginationMixin from 'ghost-admin/src/utils/mixins/pagination';
 import Table from 'ember-light-table';
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
 import {assign} from '@ember/polyfills';
 import {computed} from '@ember/object';
 import {inject as injectService} from '@ember/service';

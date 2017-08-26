@@ -6,7 +6,7 @@ import {
 import {expect} from 'chai';
 import {
   highlightedText
-} from "ghost-admin/src/ui/components/gh-search-input/highlighted-text/helper";
+} from 'ghost-admin/src/ui/components/gh-search-input/highlighted-text/helper';
 
 describe('Unit: Helper: highlighted-text', function() {
 

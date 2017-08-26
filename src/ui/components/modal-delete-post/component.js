@@ -1,4 +1,4 @@
-import ModalComponent from "ghost-admin/src/ui/components/modal-base/component";
+import ModalComponent from 'ghost-admin/src/ui/components/modal-base/component';
 import {alias} from '@ember/object/computed';
 import {inject as injectService} from '@ember/service';
 import {task} from 'ember-concurrency';

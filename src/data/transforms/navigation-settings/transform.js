@@ -1,4 +1,4 @@
-import NavigationItem from "ghost-admin/src/data/models/navigation-item/model";
+import NavigationItem from 'ghost-admin/src/data/models/navigation-item/model';
 import Transform from 'ember-data/transform';
 import {A as emberA, isArray as isEmberArray} from '@ember/array';
 

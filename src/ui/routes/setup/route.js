@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import styleBody from "ghost-admin/src/utils/mixins/style-body";
+import styleBody from 'ghost-admin/src/utils/mixins/style-body';
 import {inject as injectService} from '@ember/service';
 
 export default Route.extend(styleBody, {

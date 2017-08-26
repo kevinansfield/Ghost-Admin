@@ -1,7 +1,7 @@
 import Router from '@ember/routing/router';
-import config from "../config/environment";
-import documentTitle from "ghost-admin/src/utils/document-title";
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
+import config from '../config/environment';
+import documentTitle from 'ghost-admin/src/utils/document-title';
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
 import {inject as injectService} from '@ember/service';
 import {on} from '@ember/object/evented';
 

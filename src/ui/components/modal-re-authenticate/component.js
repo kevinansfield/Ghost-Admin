@@ -1,10 +1,10 @@
 import $ from 'jquery';
-import ModalComponent from "ghost-admin/src/ui/components/modal-base/component";
-import ValidationEngine from "ghost-admin/src/utils/mixins/validation-engine/mixin";
+import ModalComponent from 'ghost-admin/src/ui/components/modal-base/component';
+import ValidationEngine from 'ghost-admin/src/utils/mixins/validation-engine/mixin';
 import {computed} from '@ember/object';
 import {htmlSafe} from '@ember/string';
 import {inject as injectService} from '@ember/service';
-import {isVersionMismatchError} from "ghost-admin/src/services/ajax/service";
+import {isVersionMismatchError} from 'ghost-admin/src/services/ajax/service';
 import {task} from 'ember-concurrency';
 
 export default ModalComponent.extend(ValidationEngine, {

@@ -1,4 +1,4 @@
-import GhostInput from "ghost-admin/src/ui/components/gh-input/component";
+import GhostInput from 'ghost-admin/src/ui/components/gh-input/component';
 
 /**
  * This doesn't override the OneWayInput component because

@@ -1,4 +1,4 @@
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
 
 describe('Unit: Util: ghost-paths', function () {
     describe('join', function () {

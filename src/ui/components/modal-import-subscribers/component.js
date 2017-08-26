@@ -1,5 +1,5 @@
-import ModalComponent from "ghost-admin/src/ui/components/modal-base/component";
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
+import ModalComponent from 'ghost-admin/src/ui/components/modal-base/component';
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
 import {computed} from '@ember/object';
 import {invokeAction} from 'ember-invoke-action';
 

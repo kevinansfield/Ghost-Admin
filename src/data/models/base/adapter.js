@@ -1,7 +1,7 @@
 import AjaxServiceSupport from 'ember-ajax/mixins/ajax-support';
 import DataAdapterMixin from 'ember-simple-auth/mixins/data-adapter-mixin';
 import RESTAdapter from 'ember-data/adapters/rest';
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
 import {inject as injectService} from '@ember/service';
 
 export default RESTAdapter.extend(DataAdapterMixin, AjaxServiceSupport, {

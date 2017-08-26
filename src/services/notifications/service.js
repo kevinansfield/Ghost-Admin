@@ -8,7 +8,7 @@ import {isBlank} from '@ember/utils';
 import {
     isMaintenanceError,
     isVersionMismatchError
-} from "ghost-admin/src/services/ajax/service";
+} from 'ghost-admin/src/services/ajax/service';
 import {set} from '@ember/object';
 
 // Notification keys take the form of "noun.verb.message", eg:

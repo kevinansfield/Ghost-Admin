@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
-import AuthenticatedRoute from "ghost-admin/src/ui/routes/authenticated";
-import CurrentUserSettings from "ghost-admin/src/utils/mixins/current-user-settings";
-import styleBody from "ghost-admin/src/utils/mixins/style-body";
+import AuthenticatedRoute from 'ghost-admin/src/ui/routes/authenticated';
+import CurrentUserSettings from 'ghost-admin/src/utils/mixins/current-user-settings';
+import styleBody from 'ghost-admin/src/utils/mixins/style-body';
 
 export default AuthenticatedRoute.extend(styleBody, CurrentUserSettings, {
     titleToken: 'Team - User',

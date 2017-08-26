@@ -1,5 +1,5 @@
 import OneWayTextarea from 'ember-one-way-controls/components/one-way-textarea';
-import TextInputMixin from "ghost-admin/src/utils/mixins/text-input";
+import TextInputMixin from 'ghost-admin/src/utils/mixins/text-input';
 import {inject as injectService} from '@ember/service';
 import {run} from '@ember/runloop';
 

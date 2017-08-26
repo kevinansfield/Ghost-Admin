@@ -1,7 +1,7 @@
 /* global key */
 import Component from '@ember/component';
 import Ember from 'ember';
-import boundOneWay from "ghost-admin/src/utils/bound-one-way";
+import boundOneWay from 'ghost-admin/src/utils/bound-one-way';
 import {computed} from '@ember/object';
 import {htmlSafe} from '@ember/string';
 import {inject as injectService} from '@ember/service';

@@ -1,10 +1,10 @@
 import Controller from '@ember/controller';
 import RSVP from 'rsvp';
-import ValidationEngine from "ghost-admin/src/utils/mixins/validation-engine/mixin";
+import ValidationEngine from 'ghost-admin/src/utils/mixins/validation-engine/mixin';
 import {
     VersionMismatchError,
     isVersionMismatchError
-} from "ghost-admin/src/services/ajax/service";
+} from 'ghost-admin/src/services/ajax/service';
 import {assign} from '@ember/polyfills';
 import {inject as injectService} from '@ember/service';
 import {isArray as isEmberArray} from '@ember/array';

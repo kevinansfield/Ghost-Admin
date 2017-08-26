@@ -1,4 +1,4 @@
-import {countDownCharacters} from "ghost-admin/src/ui/components/gh-count-down-characters/helper";
+import {countDownCharacters} from 'ghost-admin/src/ui/components/gh-count-down-characters/helper';
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
 

@@ -1,8 +1,8 @@
 import Component from '@ember/component';
-import boundOneWay from "ghost-admin/src/utils/bound-one-way";
+import boundOneWay from 'ghost-admin/src/utils/bound-one-way';
 import moment from 'moment';
 import {InvokeActionMixin} from 'ember-invoke-action';
-import {formatDate} from "ghost-admin/src/utils/date-formatting/util";
+import {formatDate} from 'ghost-admin/src/utils/date-formatting/util';
 import {inject as injectService} from '@ember/service';
 
 export default Component.extend(InvokeActionMixin, {

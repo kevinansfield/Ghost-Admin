@@ -1,6 +1,6 @@
 /* jshint expr:true */
-import NavItem from "ghost-admin/src/data/models/navigation-item/model";
-import validator from "ghost-admin/src/validators/nav-item/validator";
+import NavItem from 'ghost-admin/src/data/models/navigation-item/model';
+import validator from 'ghost-admin/src/validators/nav-item/validator';
 import {
     describe,
     it

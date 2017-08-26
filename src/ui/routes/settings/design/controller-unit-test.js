@@ -1,6 +1,6 @@
 /* jshint expr:true */
 import EmberObject from '@ember/object';
-import NavItem from "ghost-admin/src/data/models/navigation-item/model";
+import NavItem from 'ghost-admin/src/data/models/navigation-item/model';
 import {assert, expect} from 'chai';
 import {describe, it} from 'mocha';
 import {run} from '@ember/runloop';

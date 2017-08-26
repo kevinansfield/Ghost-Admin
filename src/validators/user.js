@@ -1,4 +1,4 @@
-import BaseValidator from "./base";
+import BaseValidator from './base';
 import {isBlank} from '@ember/utils';
 
 export default BaseValidator.create({

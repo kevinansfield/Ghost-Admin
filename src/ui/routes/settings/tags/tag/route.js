@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import AuthenticatedRoute from "ghost-admin/src/ui/routes/authenticated";
+import AuthenticatedRoute from 'ghost-admin/src/ui/routes/authenticated';
 
 export default AuthenticatedRoute.extend({
 

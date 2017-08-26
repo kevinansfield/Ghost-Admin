@@ -1,4 +1,4 @@
-import {countCharacters} from "ghost-admin/src/ui/routes/team/user/-components/gh-count-characters/helper";
+import {countCharacters} from 'ghost-admin/src/ui/routes/team/user/-components/gh-count-characters/helper';
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
 

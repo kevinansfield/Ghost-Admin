@@ -1,6 +1,6 @@
-import AuthenticatedRoute from "ghost-admin/src/ui/routes/authenticated";
+import AuthenticatedRoute from 'ghost-admin/src/ui/routes/authenticated';
 import Ember from 'ember';
-import styleBody from "ghost-admin/src/utils/mixins/style-body";
+import styleBody from 'ghost-admin/src/utils/mixins/style-body';
 import {inject as injectService} from '@ember/service';
 
 // ember-cli-shims doesn't export canInvoke

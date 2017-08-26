@@ -1,4 +1,4 @@
-import BaseValidator from "./base";
+import BaseValidator from './base';
 import moment from 'moment';
 import {isEmpty, isPresent} from '@ember/utils';
 

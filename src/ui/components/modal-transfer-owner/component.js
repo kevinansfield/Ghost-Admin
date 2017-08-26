@@ -1,4 +1,4 @@
-import ModalComponent from "ghost-admin/src/ui/components/modal-base/component";
+import ModalComponent from 'ghost-admin/src/ui/components/modal-base/component';
 import {invokeAction} from 'ember-invoke-action';
 import {task} from 'ember-concurrency';
 

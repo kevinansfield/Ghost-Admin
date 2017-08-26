@@ -1,4 +1,4 @@
-import Oauth2Authenticator from "./oauth2";
+import Oauth2Authenticator from './oauth2';
 import RSVP from 'rsvp';
 import {assign} from '@ember/polyfills';
 import {isEmpty} from '@ember/utils';

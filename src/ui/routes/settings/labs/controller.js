@@ -4,7 +4,7 @@ import RSVP from 'rsvp';
 import {
     UnsupportedMediaTypeError,
     isUnsupportedMediaTypeError
-} from "ghost-admin/src/services/ajax/service";
+} from 'ghost-admin/src/services/ajax/service';
 import {inject as injectService} from '@ember/service';
 import {isBlank} from '@ember/utils';
 import {isArray as isEmberArray} from '@ember/array';

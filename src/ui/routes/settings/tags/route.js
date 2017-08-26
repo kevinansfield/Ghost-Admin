@@ -1,8 +1,8 @@
 /* global key */
 import $ from 'jquery';
-import AuthenticatedRoute from "ghost-admin/src/ui/routes/authenticated";
-import CurrentUserSettings from "ghost-admin/src/utils/mixins/current-user-settings";
-import ShortcutsRoute from "ghost-admin/src/utils/mixins/shortcuts-route";
+import AuthenticatedRoute from 'ghost-admin/src/ui/routes/authenticated';
+import CurrentUserSettings from 'ghost-admin/src/utils/mixins/current-user-settings';
+import ShortcutsRoute from 'ghost-admin/src/utils/mixins/shortcuts-route';
 
 export default AuthenticatedRoute.extend(CurrentUserSettings, ShortcutsRoute, {
     titleToken: 'Settings - Tags',

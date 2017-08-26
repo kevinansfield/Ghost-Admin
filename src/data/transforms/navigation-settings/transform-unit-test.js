@@ -1,5 +1,5 @@
 /* jshint expr:true */
-import NavigationItem from "ghost-admin/src/data/models/navigation-item/model";
+import NavigationItem from 'ghost-admin/src/data/models/navigation-item/model';
 import {describe, it} from 'mocha';
 import {A as emberA} from '@ember/array';
 import {expect} from 'chai';

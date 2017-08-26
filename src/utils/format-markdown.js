@@ -1,5 +1,5 @@
 /* global html_sanitize */
-import cajaSanitizers from "./caja-sanitizers";
+import cajaSanitizers from './caja-sanitizers';
 import markdownit from 'npm:markdown-it';
 import markdownitFootnote from 'npm:markdown-it-footnote';
 import markdownitLazyHeaders from 'npm:markdown-it-lazy-headers';

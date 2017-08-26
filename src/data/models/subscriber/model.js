@@ -1,5 +1,5 @@
 import Model from 'ember-data/model';
-import ValidationEngine from "ghost-admin/src/utils/mixins/validation-engine/mixin";
+import ValidationEngine from 'ghost-admin/src/utils/mixins/validation-engine/mixin';
 import attr from 'ember-data/attr';
 import {belongsTo} from 'ember-data/relationships';
 

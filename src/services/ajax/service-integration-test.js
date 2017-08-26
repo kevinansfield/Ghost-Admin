@@ -12,7 +12,7 @@ import {
     isRequestEntityTooLargeError,
     isUnsupportedMediaTypeError,
     isVersionMismatchError
-} from "ghost-admin/src/services/ajax/service";
+} from 'ghost-admin/src/services/ajax/service';
 import {setupTest} from 'ember-mocha';
 
 function stubAjaxEndpoint(server, response = {}, code = 200) {

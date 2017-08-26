@@ -1,4 +1,4 @@
-import {ghUserCanAdmin} from "ghost-admin/src/ui/components/gh-user-can-admin/helper";
+import {ghUserCanAdmin} from 'ghost-admin/src/ui/components/gh-user-can-admin/helper';
 import {it} from 'mocha';
 
 describe('Unit: Helper: gh-user-can-admin', function () {

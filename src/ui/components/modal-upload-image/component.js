@@ -1,5 +1,5 @@
-import ModalComponent from "ghost-admin/src/ui/components/modal-base/component";
-import cajaSanitizers from "ghost-admin/src/utils/caja-sanitizers";
+import ModalComponent from 'ghost-admin/src/ui/components/modal-base/component';
+import cajaSanitizers from 'ghost-admin/src/utils/caja-sanitizers';
 import {computed} from '@ember/object';
 import {inject as injectService} from '@ember/service';
 import {isEmpty} from '@ember/utils';

@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import AuthenticatedRoute from "ghost-admin/src/ui/routes/authenticated";
+import AuthenticatedRoute from 'ghost-admin/src/ui/routes/authenticated';
 import InfinityRoute from 'ember-infinity/mixins/route';
 import {assign} from '@ember/polyfills';
 import {isBlank} from '@ember/utils';

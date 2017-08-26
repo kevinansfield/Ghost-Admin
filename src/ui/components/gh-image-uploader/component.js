@@ -1,11 +1,11 @@
 import Component from '@ember/component';
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
 import {
     UnsupportedMediaTypeError,
     isRequestEntityTooLargeError,
     isUnsupportedMediaTypeError,
     isVersionMismatchError
-} from "ghost-admin/src/services/ajax/service";
+} from 'ghost-admin/src/services/ajax/service';
 import {assign} from '@ember/polyfills';
 import {computed} from '@ember/object';
 import {htmlSafe} from '@ember/string';

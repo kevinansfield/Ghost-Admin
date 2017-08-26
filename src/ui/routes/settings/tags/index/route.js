@@ -1,4 +1,4 @@
-import AuthenticatedRoute from "ghost-admin/src/ui/routes/authenticated";
+import AuthenticatedRoute from 'ghost-admin/src/ui/routes/authenticated';
 import {inject as injectService} from '@ember/service';
 
 export default AuthenticatedRoute.extend({

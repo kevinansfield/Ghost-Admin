@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
-import AuthenticatedRoute from "ghost-admin/src/ui/routes/authenticated";
-import base from "ghost-admin/src/utils/mixins/editor-base-route";
+import AuthenticatedRoute from 'ghost-admin/src/ui/routes/authenticated';
+import base from 'ghost-admin/src/utils/mixins/editor-base-route';
 
 export default AuthenticatedRoute.extend(base, {
     titleToken: 'Editor',

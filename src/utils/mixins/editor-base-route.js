@@ -1,8 +1,8 @@
 import $ from 'jquery';
 import Mixin from '@ember/object/mixin';
-import ShortcutsRoute from "ghost-admin/src/utils/mixins/shortcuts-route";
-import ctrlOrCmd from "ghost-admin/src/utils/ctrl-or-cmd";
-import styleBody from "ghost-admin/src/utils/mixins/style-body";
+import ShortcutsRoute from 'ghost-admin/src/utils/mixins/shortcuts-route';
+import ctrlOrCmd from 'ghost-admin/src/utils/ctrl-or-cmd';
+import styleBody from 'ghost-admin/src/utils/mixins/style-body';
 import {run} from '@ember/runloop';
 
 let generalShortcuts = {};

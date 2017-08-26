@@ -1,5 +1,5 @@
 import Oauth2 from 'torii/providers/oauth2-code';
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
 import {computed} from '@ember/object';
 import {inject as injectService} from '@ember/service';
 

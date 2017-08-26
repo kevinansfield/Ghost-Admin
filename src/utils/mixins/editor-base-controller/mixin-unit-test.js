@@ -1,5 +1,5 @@
 /* jshint expr:true */
-import EditorBaseControllerMixin from "ghost-admin/src/utils/mixins/editor-base-controller/mixin";
+import EditorBaseControllerMixin from 'ghost-admin/src/utils/mixins/editor-base-controller/mixin';
 import EmberObject from '@ember/object';
 import RSVP from 'rsvp';
 import wait from 'ember-test-helpers/wait';

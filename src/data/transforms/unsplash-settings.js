@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import Transform from 'ember-data/transform';
-import UnsplashObject from "ghost-admin/src/data/models/unsplash-integration";
+import UnsplashObject from 'ghost-admin/src/data/models/unsplash-integration';
 
 export default Transform.extend({
     deserialize(serialized) {

@@ -1,10 +1,10 @@
 import $ from 'jquery';
 import Controller from '@ember/controller';
-import randomPassword from "ghost-admin/src/utils/random-password";
+import randomPassword from 'ghost-admin/src/utils/random-password';
 import {
     IMAGE_EXTENSIONS,
     IMAGE_MIME_TYPES
-} from "ghost-admin/src/ui/components/gh-image-uploader/component";
+} from 'ghost-admin/src/ui/components/gh-image-uploader/component';
 import {computed} from '@ember/object';
 import {inject as injectService} from '@ember/service';
 import {observer} from '@ember/object';

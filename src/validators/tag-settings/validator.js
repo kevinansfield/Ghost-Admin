@@ -1,4 +1,4 @@
-import BaseValidator from "../base";
+import BaseValidator from '../base';
 
 export default BaseValidator.create({
     properties: ['name', 'slug', 'description', 'metaTitle', 'metaDescription'],

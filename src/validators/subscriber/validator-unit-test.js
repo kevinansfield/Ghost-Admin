@@ -1,6 +1,6 @@
 /* jshint expr:true */
 import EmberObject from '@ember/object';
-import ValidationEngine from "ghost-admin/src/utils/mixins/validation-engine/mixin";
+import ValidationEngine from 'ghost-admin/src/utils/mixins/validation-engine/mixin';
 import {
     describe,
     it

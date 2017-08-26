@@ -2,7 +2,7 @@ import Component from '@ember/component';
 import {
     IMAGE_EXTENSIONS,
     IMAGE_MIME_TYPES
-} from "ghost-admin/src/ui/components/gh-image-uploader/component";
+} from 'ghost-admin/src/ui/components/gh-image-uploader/component';
 import {inject as injectService} from '@ember/service';
 import {run} from '@ember/runloop';
 

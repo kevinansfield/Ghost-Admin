@@ -1,7 +1,7 @@
 /* global CodeMirror */
 import Component from '@ember/component';
 import RSVP from 'rsvp';
-import boundOneWay from "ghost-admin/src/utils/bound-one-way";
+import boundOneWay from 'ghost-admin/src/utils/bound-one-way';
 import {InvokeActionMixin} from 'ember-invoke-action';
 import {assign} from '@ember/polyfills';
 import {bind, once, scheduleOnce} from '@ember/runloop';

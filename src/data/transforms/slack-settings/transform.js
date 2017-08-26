@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import SlackObject from "ghost-admin/src/data/models/slack-integration";
+import SlackObject from 'ghost-admin/src/data/models/slack-integration';
 import Transform from 'ember-data/transform';
 import {A as emberA, isArray as isEmberArray} from '@ember/array';
 

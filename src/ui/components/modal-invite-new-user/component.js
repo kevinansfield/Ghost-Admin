@@ -1,6 +1,6 @@
-import ModalComponent from "ghost-admin/src/ui/components/modal-base/component";
+import ModalComponent from 'ghost-admin/src/ui/components/modal-base/component';
 import RSVP from 'rsvp';
-import ValidationEngine from "ghost-admin/src/utils/mixins/validation-engine/mixin";
+import ValidationEngine from 'ghost-admin/src/utils/mixins/validation-engine/mixin';
 import {A as emberA} from '@ember/array';
 import {inject as injectService} from '@ember/service';
 import {run} from '@ember/runloop';

@@ -1,6 +1,6 @@
-import AuthenticatedRoute from "ghost-admin/src/ui/routes/authenticated";
-import UnsplashObject from "ghost-admin/src/data/models/unsplash-integration";
-import styleBody from "ghost-admin/src/utils/mixins/style-body";
+import AuthenticatedRoute from 'ghost-admin/src/ui/routes/authenticated';
+import UnsplashObject from 'ghost-admin/src/data/models/unsplash-integration';
+import styleBody from 'ghost-admin/src/utils/mixins/style-body';
 import {inject as injectService} from '@ember/service';
 
 export default AuthenticatedRoute.extend(styleBody, {

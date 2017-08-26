@@ -7,4 +7,4 @@ export const helpers = function destroyApp(application) {
     }
 
     run(application, 'destroy');
-}
+};

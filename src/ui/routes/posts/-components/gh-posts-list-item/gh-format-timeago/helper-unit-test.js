@@ -8,7 +8,7 @@ import {
 import {expect} from 'chai';
 import {
     timeAgo
-} from "ghost-admin/src/ui/routes/posts/-components/gh-posts-list-item/gh-format-timeago/helper";
+} from 'ghost-admin/src/ui/routes/posts/-components/gh-posts-list-item/gh-format-timeago/helper';
 
 describe('Unit: Helper: gh-format-timeago', function () {
     // eslint-disable-next-line no-unused-vars

@@ -1,7 +1,7 @@
 import Controller from '@ember/controller';
 import Ember from 'ember';
-import boundOneWay from "ghost-admin/src/utils/bound-one-way";
-import isNumber from "ghost-admin/src/utils/isNumber";
+import boundOneWay from 'ghost-admin/src/utils/bound-one-way';
+import isNumber from 'ghost-admin/src/utils/isNumber';
 import {alias, and, not, or, readOnly} from '@ember/object/computed';
 import {computed} from '@ember/object';
 import {htmlSafe} from '@ember/string';

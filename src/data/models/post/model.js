@@ -1,10 +1,10 @@
 import Ember from 'ember';
 import Model from 'ember-data/model';
-import ValidationEngine from "ghost-admin/src/utils/mixins/validation-engine/mixin";
+import ValidationEngine from 'ghost-admin/src/utils/mixins/validation-engine/mixin';
 import attr from 'ember-data/attr';
-import boundOneWay from "ghost-admin/src/utils/bound-one-way";
+import boundOneWay from 'ghost-admin/src/utils/bound-one-way';
 import moment from 'moment';
-import {BLANK_DOC} from "ghost-admin/src/ui/routes/editor/edit/-components/gh-markdown-editor/component";
+import {BLANK_DOC} from 'ghost-admin/src/ui/routes/editor/edit/-components/gh-markdown-editor/component';
 import {belongsTo, hasMany} from 'ember-data/relationships';
 import {compare} from '@ember/utils';
 import {computed} from '@ember/object';

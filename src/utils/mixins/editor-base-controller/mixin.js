@@ -1,9 +1,9 @@
 import Ember from 'ember';
 import Mixin from '@ember/object/mixin';
-import PostModel from "ghost-admin/src/data/models/post/model";
-import boundOneWay from "ghost-admin/src/utils/bound-one-way";
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
-import isNumber from "ghost-admin/src/utils/isNumber";
+import PostModel from 'ghost-admin/src/data/models/post/model';
+import boundOneWay from 'ghost-admin/src/utils/bound-one-way';
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
+import isNumber from 'ghost-admin/src/utils/isNumber';
 import moment from 'moment';
 import {computed} from '@ember/object';
 import {htmlSafe} from '@ember/string';
@@ -12,7 +12,7 @@ import {inject as injectService} from '@ember/service';
 import {isBlank} from '@ember/utils';
 import {isArray as isEmberArray} from '@ember/array';
 import {isInvalidError} from 'ember-ajax/errors';
-import {isVersionMismatchError} from "ghost-admin/src/services/ajax/service";
+import {isVersionMismatchError} from 'ghost-admin/src/services/ajax/service';
 import {mapBy, reads} from '@ember/object/computed';
 import {task, taskGroup, timeout} from 'ember-concurrency';
 

@@ -6,7 +6,7 @@ import {
 import {expect} from 'chai';
 import {
     isEqual
-} from "ghost-admin/src/ui/components/is-equal/helper";
+} from 'ghost-admin/src/ui/components/is-equal/helper';
 
 describe('Unit: Helper: is-equal', function () {
     // Replace this with your real tests.

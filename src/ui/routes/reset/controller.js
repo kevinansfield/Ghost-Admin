@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import ValidationEngine from "ghost-admin/src/utils/mixins/validation-engine/mixin";
+import ValidationEngine from 'ghost-admin/src/utils/mixins/validation-engine/mixin';
 import {computed} from '@ember/object';
 import {inject as injectService} from '@ember/service';
 import {task} from 'ember-concurrency';

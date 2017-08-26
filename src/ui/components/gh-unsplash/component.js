@@ -1,5 +1,5 @@
 import Component from '@ember/component';
-import ShortcutsMixin from "ghost-admin/src/utils/mixins/shortcuts";
+import ShortcutsMixin from 'ghost-admin/src/utils/mixins/shortcuts';
 import {bind} from '@ember/runloop';
 import {inject as injectService} from '@ember/service';
 import {or} from '@ember/object/computed';

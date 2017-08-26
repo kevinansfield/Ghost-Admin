@@ -1,4 +1,4 @@
-import BaseAdapter from "ghost-admin/src/data/models/base/adapter";
+import BaseAdapter from 'ghost-admin/src/data/models/base/adapter';
 import {get} from '@ember/object';
 import {isNone} from '@ember/utils';
 

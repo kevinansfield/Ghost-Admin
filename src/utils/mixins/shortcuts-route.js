@@ -1,5 +1,5 @@
 import Mixin from '@ember/object/mixin';
-import ShortcutsMixin from "ghost-admin/src/utils/mixins/shortcuts";
+import ShortcutsMixin from 'ghost-admin/src/utils/mixins/shortcuts';
 
 /**
  * Only routes can implement shortcuts.

@@ -1,5 +1,5 @@
 /* eslint-disable camelcase */
-import ApplicationSerializer from "ghost-admin/src/data/models/application/serializer";
+import ApplicationSerializer from 'ghost-admin/src/data/models/application/serializer';
 import EmbeddedRecordsMixin from 'ember-data/serializers/embedded-records-mixin';
 import {pluralize} from 'ember-inflector';
 

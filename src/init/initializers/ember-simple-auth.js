@@ -1,6 +1,6 @@
 import Configuration from 'ember-simple-auth/configuration';
-import ENV from "../../../config/environment";
-import ghostPaths from "../../utils/ghost-paths/util";
+import ENV from '../../../config/environment';
+import ghostPaths from '../../utils/ghost-paths/util';
 import setupSession from 'ember-simple-auth/initializers/setup-session';
 import setupSessionService from 'ember-simple-auth/initializers/setup-session-service';
 

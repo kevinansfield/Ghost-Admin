@@ -1,7 +1,7 @@
 import Pretender from 'pretender';
 import wait from 'ember-test-helpers/wait';
 import {describe, it} from 'mocha';
-import {errorOverride, errorReset} from "../../../tests/helpers/adapter-error";
+import {errorOverride, errorReset} from '../../../tests/helpers/adapter-error';
 import {expect} from 'chai';
 import {run} from '@ember/runloop';
 import {setupTest} from 'ember-mocha';

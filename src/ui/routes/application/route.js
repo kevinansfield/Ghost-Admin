@@ -3,10 +3,10 @@ import ApplicationRouteMixin from 'ember-simple-auth/mixins/application-route-mi
 import AuthConfiguration from 'ember-simple-auth/configuration';
 import RSVP from 'rsvp';
 import Route from '@ember/routing/route';
-import ShortcutsRoute from "ghost-admin/src/utils/mixins/shortcuts-route";
-import ctrlOrCmd from "ghost-admin/src/utils/ctrl-or-cmd";
+import ShortcutsRoute from 'ghost-admin/src/utils/mixins/shortcuts-route';
+import ctrlOrCmd from 'ghost-admin/src/utils/ctrl-or-cmd';
 import moment from 'moment';
-import windowProxy from "ghost-admin/src/utils/window-proxy";
+import windowProxy from 'ghost-admin/src/utils/window-proxy';
 import {htmlSafe} from '@ember/string';
 import {inject as injectService} from '@ember/service';
 import {isArray as isEmberArray} from '@ember/array';

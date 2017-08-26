@@ -1,9 +1,9 @@
-import ModalComponent from "ghost-admin/src/ui/components/modal-base/component";
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
+import ModalComponent from 'ghost-admin/src/ui/components/modal-base/component';
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
 import {
     UnsupportedMediaTypeError,
     isThemeValidationError
-} from "ghost-admin/src/services/ajax/service";
+} from 'ghost-admin/src/services/ajax/service';
 import {computed} from '@ember/object';
 import {get} from '@ember/object';
 import {inject as injectService} from '@ember/service';

@@ -1,6 +1,6 @@
 /* jshint expr:true */
 import $ from 'jquery';
-import NavItem from "ghost-admin/src/data/models/navigation-item/model";
+import NavItem from 'ghost-admin/src/data/models/navigation-item/model';
 import hbs from 'htmlbars-inline-precompile';
 import wait from 'ember-test-helpers/wait';
 import {describe, it} from 'mocha';

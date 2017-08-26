@@ -3,7 +3,7 @@ import hbs from 'htmlbars-inline-precompile';
 import sinon from 'sinon';
 import wait from 'ember-test-helpers/wait';
 import {click, find, findAll} from 'ember-native-dom-helpers';
-import {createFile} from "../../../../tests/helpers/file-upload";
+import {createFile} from '../../../../tests/helpers/file-upload';
 import {describe, it} from 'mocha';
 import {expect} from 'chai';
 import {run} from '@ember/runloop';

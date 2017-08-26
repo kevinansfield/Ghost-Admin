@@ -4,7 +4,7 @@ import {
     isRequestEntityTooLargeError,
     isUnsupportedMediaTypeError,
     isVersionMismatchError
-} from "ghost-admin/src/services/ajax/service";
+} from 'ghost-admin/src/services/ajax/service';
 import {computed} from '@ember/object';
 import {htmlSafe} from '@ember/string';
 import {inject as injectService} from '@ember/service';
