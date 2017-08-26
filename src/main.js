@@ -1,10 +1,10 @@
-import "ghost-admin/src/utils/link-component";
-import "ghost-admin/src/utils/route";
-import "ghost-admin/src/utils/text-field";
+import 'ghost-admin/src/utils/link-component';
+import 'ghost-admin/src/utils/route';
+import 'ghost-admin/src/utils/text-field';
 import Application from '@ember/application';
 import Ember from 'ember';
-import Resolver from "./resolver";
-import config from "../config/environment";
+import Resolver from './resolver';
+import config from '../config/environment';
 import loadInitializers from 'ember-load-initializers';
 
 const App = Application.extend({
@@ -36,6 +36,6 @@ Ember.Debug.registerWarnHandler((message, options, next) => {
     next(message, options);
 });
 
-loadInitializers(App, config.modulePrefix);
+loadInitializers(App, `${config.modulePrefix}/src/init`);
 
 export default App;
