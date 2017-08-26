@@ -1,4 +1,4 @@
-import ghostPaths from "ghost-admin/src/utils/ghost-paths/util";
+import ghostPaths from 'ghost-admin/src/utils/ghost-paths/util';
 import {helper} from '@ember/component/helper';
 import {htmlSafe} from '@ember/string';
 
@@ -12,7 +12,7 @@ import {htmlSafe} from '@ember/string';
 //              and the gh-path helper can get in the way of asset rewriting
 // {{gh-path 'asset' '/img/hi.png'}} for resolved url (/myblog/ghost/assets/img/hi.png)
 
-export const helper = helper(function (params) {
+export default helper(function (params) {
     let paths = ghostPaths();
     let [path, url] = params;
     let base;

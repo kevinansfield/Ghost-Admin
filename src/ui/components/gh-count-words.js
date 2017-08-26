@@ -1,7 +1,7 @@
-import counter from "ghost-admin/src/utils/word-count";
+import counter from 'ghost-admin/src/utils/word-count';
 import {helper} from '@ember/component/helper';
 
-export const helper = helper(function (params) {
+export default helper(function (params) {
     if (!params || !params.length) {
         return;
     }
