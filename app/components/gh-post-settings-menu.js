@@ -3,6 +3,7 @@ import SettingsMenuMixin from 'ghost-admin/mixins/settings-menu-component';
 import boundOneWay from 'ghost-admin/utils/bound-one-way';
 import formatMarkdown from 'ghost-admin/utils/format-markdown';
 import moment from 'moment';
+import {NEWS_GENRES} from 'ghost-admin/controllers/settings/apps/google-news';
 import {alias, or} from '@ember/object/computed';
 import {computed} from '@ember/object';
 import {guidFor} from '@ember/object/internals';
@@ -132,6 +133,14 @@ export default Component.extend(SettingsMenuMixin, {
         return this.get('store').filter('tag', {limit: 'all'}, () => {
             return true;
         });
+    }),
+
+    availableNewsGenres: computed(function () {
+        return NEWS_GENRES;
+    }),
+
+    selectedNewsGenres: computed('availableNewsGenres', 'model.newsGenres', function () {
+        return [];
     }),
 
     showError(error) {
@@ -324,6 +333,19 @@ export default Component.extend(SettingsMenuMixin, {
 
                 return model.save();
             });
+        },
+
+        setNewsKeywords(keywords) {
+
+        },
+
+        updateNewsGenresScratch(genres) {
+
+        },
+
+        // TODO: selects change immediately, no need for scratch value?
+        setNewsGenres(genres) {
+
         },
 
         setOgTitle(ogTitle) {

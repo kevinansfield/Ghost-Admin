@@ -122,6 +122,15 @@
                         </button>
                         {{inline-svg "arrow-right"}}
                     </li>
+                    {{#if settings.googleNews.isActive}}
+                        <li class="nav-list-item" {{action "showSubview" "google-news"}} data-test-button="google-news">
+                            <button type="button">
+                                <b>Google News</b>
+                                <span>Customise Google News settings</span>
+                            </button>
+                        {{inline-svg "arrow-right"}}
+                        </li>
+                    {{/if}}
                     <li class="nav-list-item" {{action "showSubview" "twitter-data"}} data-test-button="twitter-data">
                         <button type="button">
                             <b>Twitter Card</b>
@@ -215,6 +224,53 @@
                                         <div class="seo-preview-description">{{truncate seoDescription 300}}</div>
                                     </div>
                                 </div>
+                            </form>
+                        </div>
+                    {{/if}}
+
+                    {{#if (eq subview "google-news")}}
+                        <div class="settings-menu-header subview">
+                            <button {{action "closeSubview"}} class="back settings-menu-header-action" data-test-button="close-psm-subview">{{inline-svg "arrow-left"}}<span class="hidden">Back</span></button>
+                            <h4>Google News</h4>
+                            <div style="width:23px;"></div>
+                        </div>
+
+                        <div class="settings-menu-content">
+                            <form {{action "discardEnter" on="submit"}}>
+                                {{#gh-form-group errors=model.errors hasValidated=model.hasValidated property="newsKeywords"}}
+                                    <label for="meta-title">News Keywords</label>
+                                    {{gh-input newsKeywordsScratch
+                                        class="post-setting-news-keywords"
+                                        id="news-keywords"
+                                        name="post-setting-news-keywords"
+                                        placeholder=(or settings.googleNews.defaultKeywords "News, Fashion, Beauty, Lifestyle")
+                                        focusOut=(action "setNewsKeywords" newsKeywordsScratch)
+                                        stopEnterKeyDownPropagation="true"
+                                        update=(action (mut newsKeywordsScratch))
+                                        data-test-field="news-keywords"}}
+                                    <p>Max of 10 comma-separated <a href="https://support.google.com/news/publisher/answer/116037" target="_blank" rel="noopener">Google News keywords</a></p>
+                                    {{gh-error-message errors=model.errors property="newsKeywords"}}
+                                {{/gh-form-group}}
+                            </form>
+                        </div>
+
+                        <div class="settings-menu-content">
+                            <form {{action "discardEnter" on="submit"}}>
+                                {{#gh-form-group class="for-select" errors=model.errors hasValidated=model.hasValidated property="newsGenre"}}
+                                    <label for="meta-title">News Genres</label>
+                                    {{one-way-select
+                                        selectedNewsGenres
+                                        options=availableNewsGenres
+                                        optionValuePath="value"
+                                        optionLabelPath="name"
+                                        multiple=true
+                                        size=availableNewsGenres.length
+                                        update=(action "updateNewsGenresScratch")
+                                        style="height: auto"
+                                        data-test-select="defaultGenres"
+                                    }}
+                                    {{gh-error-message errors=model.errors property="newsGenres"}}
+                                {{/gh-form-group}}
                             </form>
                         </div>
                     {{/if}}

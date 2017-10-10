@@ -77,6 +77,30 @@
                 </article>
                 {{/link-to}}
             </div>
+
+            <div class="apps-grid-cell" data-test-app="google-news">
+                {{#link-to "settings.apps.google-news" data-test-link="google-news"}}
+                <article class="apps-card-app">
+                    <div class="apps-card-left">
+                        <figure class="apps-card-app-icon" style="background-image:url(assets/img/googleicon.png);background-size:45px;"></figure>
+                        <div class="apps-card-meta">
+                            <h3 class="apps-card-app-title">Google News</h3>
+                            <p class="apps-card-app-desc">Optimise for inclusion in Google News</p>
+                        </div>
+                    </div>
+                    <div class="gh-card-right">
+                        <div class="apps-configured">
+                            {{#if settings.googleNews.isActive}}
+                                <span class="green" data-test-app-status>Active</span>
+                            {{else}}
+                                <span data-test-app-status>Configure</span>
+                            {{/if}}
+                            {{inline-svg "arrow-right"}}
+                        </div>
+                    </div>
+                </article>
+                {{/link-to}}
+            </div>
         </div>
         <p class="apps-grid-note">(More coming soon!)</p>
     </section>

@@ -1,0 +1,101 @@
+<section class="gh-canvas">
+    <header class="gh-canvas-header">
+        <h2 class="gh-canvas-title" data-test-screen-title>
+            {{#link-to "settings.apps.index"}}Apps{{/link-to}}
+            <span>{{inline-svg "arrow-right"}}</span>
+            Google News
+        </h2>
+        <section class="view-actions">
+            {{gh-task-button task=save class="gh-btn gh-btn-blue gh-btn-icon" data-test-save-button=true}}
+        </section>
+    </header>
+
+    <section class="view-container">
+        <br>
+        <section class="app-grid">
+            <div class="app-cell">
+                <img class="app-icon" src="assets/img/googleicon.png" />
+            </div>
+            <div class="app-cell">
+                <h3>Google News</h3>
+                <p>Optimise for inclusion in Google News</p>
+            </div>
+        </section>
+
+        <form class="app-config-form" novalidate="novalidate" {{action "save" on="submit"}}>
+            <div class="gh-setting-header">
+                Google News configuration
+            </div>
+
+            <div class="gh-setting">
+                <div class="gh-setting-content">
+                    <div class="gh-setting-title">Enable Google News</div>
+                    <div class="gh-setting-desc">
+                        When Google News optimisation is enabled:
+                        <br><br>
+                        <ul>
+                            <li>any post with the <code>#news</code> tag will be marked for inclusion in Google News</li>
+                            <li>a Google News specific sitemap will be generated at <a href="{{sitemapUrl}}">{{sitemapUrl}}</a></li>
+                            <li>meta tags will be added to any non-news posts to stop the Google News bot indexing them</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gh-setting-action">
+                    <div class="form-group right">
+                        <div class="for-checkbox">
+                            <label for="isActive" class="checkbox">
+                                {{one-way-checkbox googleNews.isActive
+                                    id="isActive"
+                                    name="isActive"
+                                    update=(action (mut googleNews.isActive))
+                                    data-test-checkbox="enable"
+                                }}
+                                <span class="input-toggle-component"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gh-setting">
+                <div class="gh-setting-content">
+                    <div class="gh-setting-title">Default genre</div>
+                    <div class="gh-setting-desc">
+                        <a href="https://support.google.com/news/publisher/answer/93992" target="_blank" rel="noopener">Google News genres</a> to use when no story-specific genres are specified:
+                    </div>
+                    <div class="gh-setting-content-extended">
+                        {{#gh-form-group class="for-select" errors=model.errors hasValidated=model.hasValidated property="defaultGenres"}}
+                            {{one-way-select
+                                selectedGenres
+                                options=availableGenres
+                                optionValuePath="value"
+                                optionLabelPath="name"
+                                multiple=true
+                                size=availableGenres.length
+                                update=(action "updateDefaultGenres")
+                                style="height: auto"
+                                data-test-select="defaultGenres"
+                            }}
+                            {{gh-error-message errors=model.errors property="defaultGenres"}}
+                        {{/gh-form-group}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="gh-setting">
+                <div class="gh-setting-content">
+                    <div class="gh-setting-title">Default keywords</div>
+                    <div class="gh-setting-desc">
+                        <a href="https://support.google.com/news/publisher/answer/116037" target="_blank" rel="noopener">Google News keywords</a> to use when no story-specific keywords are specified:
+                    </div>
+                    <div class="gh-setting-content-extended">
+                        {{#gh-form-group errors=model.errors hasValidated=model.hasValidated property="defaultKeywords"}}
+                            {{gh-input model.defaultKeywords update=(action (mut model.defaultKeywords)) onenter=(action "save") placeholder="News, Fashion, Beauty, Lifestyle" data-test-input="defaultKeywords"}}
+                            {{gh-error-message errors=model.errors property="defaultKeywords"}}
+                        {{/gh-form-group}}
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</section>

@@ -53,9 +53,10 @@ GhostRouter.map(function () {
         this.route('uploadtheme');
     });
     this.route('settings.apps', {path: '/settings/apps'}, function () {
-        this.route('slack', {path: 'slack'});
-        this.route('amp', {path: 'amp'});
-        this.route('unsplash', {path: 'unsplash'});
+        this.route('slack');
+        this.route('amp');
+        this.route('unsplash');
+        this.route('google-news');
     });
 
     this.route('subscribers', function () {
