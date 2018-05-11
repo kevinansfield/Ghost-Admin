@@ -42,41 +42,57 @@ export default Controller.extend(PaginationMixin, {
         }
     }),
 
-    columns: computed('order', 'direction', function () {
-        let order = this.get('order');
-        let direction = this.get('direction');
+    // columns: computed('order', 'direction', function () {
+    //     let order = this.get('order');
+    //     let direction = this.get('direction');
+    //
+    //     return [{
+    //         label: 'Email Address',
+    //         valuePath: 'email',
+    //         sorted: order === 'email',
+    //         ascending: direction === 'asc',
+    //         classNames: ['gh-subscribers-table-email-cell'],
+    //         cellClassNames: ['gh-subscribers-table-email-cell']
+    //     }, {
+    //         label: 'Subscription Date',
+    //         valuePath: 'createdAtUTC',
+    //         format(value) {
+    //             return value.format('MMMM DD, YYYY');
+    //         },
+    //         sorted: order === 'created_at',
+    //         ascending: direction === 'asc',
+    //         classNames: ['gh-subscribers-table-date-cell'],
+    //         cellClassNames: ['gh-subscribers-table-date-cell']
+    //     }, {
+    //         label: 'Status',
+    //         valuePath: 'status',
+    //         sorted: order === 'status',
+    //         ascending: direction === 'asc',
+    //         classNames: ['gh-subscribers-table-status-cell'],
+    //         cellClassNames: ['gh-subscribers-table-status-cell']
+    //     }, {
+    //         label: '',
+    //         sortable: false,
+    //         cellComponent: 'gh-subscribers-table-delete-cell',
+    //         align: 'right',
+    //         classNames: ['gh-subscribers-table-delete-cell'],
+    //         cellClassNames: ['gh-subscribers-table-delete-cell']
+    //     }];
+    // }),
 
+    columns: computed(function () {
         return [{
-            label: 'Email Address',
-            valuePath: 'email',
-            sorted: order === 'email',
-            ascending: direction === 'asc',
-            classNames: ['gh-subscribers-table-email-cell'],
-            cellClassNames: ['gh-subscribers-table-email-cell']
+            title: 'Email Address',
+            propertyName: 'email'
         }, {
-            label: 'Subscription Date',
-            valuePath: 'createdAtUTC',
-            format(value) {
-                return value.format('MMMM DD, YYYY');
-            },
-            sorted: order === 'created_at',
-            ascending: direction === 'asc',
-            classNames: ['gh-subscribers-table-date-cell'],
-            cellClassNames: ['gh-subscribers-table-date-cell']
+            title: 'Subscription Date',
+            propertyName: 'createdAtUTC'
         }, {
-            label: 'Status',
-            valuePath: 'status',
-            sorted: order === 'status',
-            ascending: direction === 'asc',
-            classNames: ['gh-subscribers-table-status-cell'],
-            cellClassNames: ['gh-subscribers-table-status-cell']
+            title: 'Status',
+            propertyName: 'status'
         }, {
-            label: '',
-            sortable: false,
-            cellComponent: 'gh-subscribers-table-delete-cell',
-            align: 'right',
-            classNames: ['gh-subscribers-table-delete-cell'],
-            cellClassNames: ['gh-subscribers-table-delete-cell']
+            title: '',
+            component: 'gh-subscribers-table-delete-cell'
         }];
     }),
 

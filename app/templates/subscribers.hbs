@@ -9,12 +9,22 @@
     </header>
 
     <section class="view-container">
-        {{gh-subscribers-table
+        {{!-- {{gh-subscribers-table
                 table=table
                 isLoading=isLoading
                 loadNextPage=(action 'loadNextPage')
                 sortByColumn=(action 'sortByColumn')
-                delete=(action 'deleteSubscriber')}}
+                delete=(action 'deleteSubscriber')}} --}}
+
+        {{models-table-server-paginated
+            data=subscribers
+            columns=columns
+            filterQueryParameters=filterQueryParameters
+            showColumnsDropdown=false
+            useFilteringByColumns=false
+            showGlobalFilter=false
+            useNumericPagination=true
+        }}
     </section>
 </section>
 
